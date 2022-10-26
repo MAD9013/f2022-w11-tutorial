@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Basics | W11 - Transition &amp; Animation</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/animation-playground.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <ul class="skip-links">
+      <li><a href="#nav">Skip to main navigation</a></li>
+      <li><a href="#main">Skip to content</a></li>
+    </ul>
+
+    <header class="masthead no-print" role="banner">
+      <div class="container">
+        <a href="/" class="logo">
+          <strong>Transition &amp; Animation</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul>
+            <li><a href="./transition-basics.html">Transition Basics</a></li>
+            <li>
+              <a href="./transition-playground.html">Transition Playground</a>
+            </li>
+            <li><a href="./animation-basics.html">Animation Basics</a></li>
+            <li>
+              <a aria-current="page" href="./animation-playground.html"
+                >Animation Playground</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" role="main">
+      <!-- ---------- TUTORIAL CONTENT ---------- -->
+
+      <header class="hero">
+        <div class="container container-side-padding">
+          <div class="hero-content">
+            <h1>Animation Playground</h1>
+            <p>Let's use animations in some fun practical methods.</p>
+            <a class="btn" href="#" aria-label="Learn more about CSS animation"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="container">
+          <h2 class="counter-title">Days since last accident:</h2>
+          <div
+            class="counter"
+            aria-label="It has been 247 since last accident."
+            tabindex="0"
+          >
+            <div class="counter-column hundreds">
+              <span class="counter-num">0</span>
+              <span class="counter-num">1</span>
+              <span class="counter-num">2</span>
+              <span class="counter-num">3</span>
+              <span class="counter-num">4</span>
+              <span class="counter-num">5</span>
+              <span class="counter-num">6</span>
+              <span class="counter-num">7</span>
+              <span class="counter-num">8</span>
+              <span class="counter-num">9</span>
+            </div>
+            <div class="counter-column tens">
+              <span class="counter-num">0</span>
+              <span class="counter-num">1</span>
+              <span class="counter-num">2</span>
+              <span class="counter-num">3</span>
+              <span class="counter-num">4</span>
+              <span class="counter-num">5</span>
+              <span class="counter-num">6</span>
+              <span class="counter-num">7</span>
+              <span class="counter-num">8</span>
+              <span class="counter-num">9</span>
+            </div>
+            <div class="counter-column ones">
+              <span class="counter-num">0</span>
+              <span class="counter-num">1</span>
+              <span class="counter-num">2</span>
+              <span class="counter-num">3</span>
+              <span class="counter-num">4</span>
+              <span class="counter-num">5</span>
+              <span class="counter-num">6</span>
+              <span class="counter-num">7</span>
+              <span class="counter-num">8</span>
+              <span class="counter-num">9</span>
+            </div>
+          </div>
+          <div class="btn-wrap">
+            <button class="btn btn-accident">Report Accident</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Loaders</h2>
+          <div class="loader-circle-wrap">
+            <div class="loader-grow-outline"></div>
+            <div class="loader-grow-outline delayed"></div>
+          </div>
+          <div class="loader-circle-wrap">
+            <svg
+              class="loader-spinner"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 72 72"
+            >
+              <circle cx="36" cy="36" r="32" stroke-miterlimit="10" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- END TUTORIAL CONTENT ---------- -->
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          <a
+            href="https://mad9013.github.io/F2021/modules/week11/"
+            target="_blank"
+            >Week 11 Content</a
+          >
+        </p>
+        <small
+          >Created for
+          <a href="https://mad9013.github.io/F2021/">MAD9013 course</a> and free
+          for any use.</small
+        >
+      </div>
+    </footer>
+    <div class="click-to-close"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

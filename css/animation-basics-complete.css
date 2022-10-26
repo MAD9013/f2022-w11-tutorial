@@ -1,0 +1,66 @@
+.box-1 {
+  width: max-content;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.box-2 {
+  width: max-content;
+  animation: shift 1s 1s alternate infinite cubic-bezier(.9,-0.35,.1,1.37);
+}
+
+@keyframes shift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(40rem);
+  }
+}
+
+.box-3 {
+  width: max-content;
+  animation: multiStep 2s infinite;
+  background-color: var(--color-accent-2-light);
+  border-width: 3px;
+}
+
+@keyframes multiStep {
+  0% {
+    transform: translate(0, 0);
+    background-color: var(--color-accent-2-light);
+    border-width: 3px;
+  }
+  25% {
+    transform: translate(0, 10rem) rotate(0);
+    background-color: var(--color-accent-3-light);
+    border-width: 10px;
+  }
+  50% {
+    transform: translate(10rem, 10rem) rotate(180deg);
+    background-color: var(--color-accent-4-light);
+    border-width: 3px;
+  }
+  75% {
+    transform: translate(10rem, 0) rotate(-180deg);
+    background-color: var(--color-accent-5-light);
+    border-width: 10px;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+    background-color: var(--color-accent-2-light);
+    border-width: 3px;
+  }
+}

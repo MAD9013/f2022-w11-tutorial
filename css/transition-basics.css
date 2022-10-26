@@ -1,0 +1,90 @@
+.box-1 {
+  
+}
+
+.box-1:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.box-2 {
+  
+}
+
+.box-2:hover {
+  background-color: var(--color-accent-1);
+  color: #fff;
+}
+
+.box-3 {
+  width: 10rem;
+
+}
+
+.box-3:hover {
+  width: 100%;
+}
+
+.box-4 {
+  position: relative;
+
+}
+
+.box-4:hover {
+  left: 5rem;
+}
+
+.flex-transition {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-transition:hover {
+  justify-content: flex-end;
+}
+
+.grid-transition {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr 1fr 1fr;
+
+}
+
+.grid-transition:hover {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+/* - - - - - - - - - - Timing Functions - - - - - - - - - - */
+
+.timing .box-simple {
+  width: 10rem;
+  position: relative;
+}
+
+.timing:hover .box-simple {
+  
+}
+
+.timing .linear {
+
+}
+
+.timing .ease {
+
+}
+
+.timing .ease-in {
+
+}
+
+.timing .ease-out {
+
+}
+
+.timing .ease-in-out {
+
+}
+
+.timing .cubic-bezier {
+
+}

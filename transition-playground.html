@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Playground | W11 - Transition &amp; Animation</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/transition-playground.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <ul class="skip-links">
+      <li><a href="#nav">Skip to main navigation</a></li>
+      <li><a href="#main">Skip to content</a></li>
+    </ul>
+
+    <header class="masthead no-print" role="banner">
+      <div class="container">
+        <a href="/" class="logo">
+          <strong>Transition &amp; Animation</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul>
+            <li><a href="./transition-basics.html">Transition Basics</a></li>
+            <li>
+              <a aria-current="page" href="./transition-playground.html"
+                >Transition Playground</a
+              >
+            </li>
+            <li><a href="./animation-basics.html">Animation Basics</a></li>
+            <li>
+              <a href="./animation-playground.html">Animation Playground</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" role="main">
+      <section>
+        <div class="container container-side-padding">
+          <h1>Transition Playground</h1>
+
+          <!-- ---------- TUTORIAL CONTENT ---------- -->
+
+          <h2>Box Shadow Cards</h2>
+          <div class="grid-3">
+            <a
+              class="card card-shadow"
+              href="#"
+              aria-label="Learn more about card title"
+            >
+              <img src="https://placedog.net/500/280" alt="A cute dog" />
+              <div class="card-content">
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+            <a
+              class="card card-shadow"
+              href="#"
+              aria-label="Learn more about card title"
+            >
+              <img src="https://placedog.net/600/350" alt="A cute dog" />
+              <div class="card-content">
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+            <a
+              class="card card-shadow"
+              href="#"
+              aria-label="Learn more about card title"
+            >
+              <img src="https://placedog.net/550/300" alt="A cute dog" />
+              <div class="card-content">
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+          </div>
+
+          <h2 class="padding-t">Overlay Cards</h2>
+          <div class="grid-3">
+            <a
+              class="card card-overlay"
+              href="#"
+              aria-label="Learn more about card title"
+            >
+              <img src="https://placedog.net/500/280" alt="A cute dog" />
+              <div class="card-content">
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+            <a
+              class="card card-overlay"
+              href="#"
+              aria-label="Learn more about card title"
+            >
+              <img src="https://placedog.net/600/350" alt="A cute dog" />
+              <div class="card-content">
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+            <a
+              class="card card-overlay"
+              href="#"
+              aria-label="Learn more about card title"
+            >
+              <img src="https://placedog.net/550/300" alt="A cute dog" />
+              <div class="card-content">
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+          </div>
+
+          <h2 class="padding-t">Fun Buttons</h2>
+          <div class="buttons">
+            <a class="btn-swipe" href="#">Swipe</a>
+            <a class="btn-delete" href="#">
+              <i class="icon">
+                <svg><use xlink:href="/images/icons.svg#delete" /></svg>
+              </i>
+              <span class="icon-label">Delete</span>
+            </a>
+            <a class="btn-3d" href="#">3D Button</a>
+          </div>
+
+          <!-- ---------- END TUTORIAL CONTENT ---------- -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          <a
+            href="https://mad9013.github.io/F2021/modules/week11/"
+            target="_blank"
+            >Week 11 Content</a
+          >
+        </p>
+        <small
+          >Created for
+          <a href="https://mad9013.github.io/F2021/">MAD9013 course</a> and free
+          for any use.</small
+        >
+      </div>
+    </footer>
+    <div class="click-to-close"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

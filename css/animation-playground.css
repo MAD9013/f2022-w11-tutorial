@@ -1,0 +1,67 @@
+.hero {
+  height: clamp(30rem, 80vh, 50rem);
+  background-color: var(--color-primary);
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-content {
+  padding: 4rem 0;
+  font-size: 1.5rem;
+}
+
+.hero-content h1,
+.hero-content p {
+  color: #fff;
+}
+
+.hero-content .btn {
+  background-color: #fff;
+  border-color: var(--color-primary-pale);
+  color: var(--color-primary);
+  transition:
+    color .2s,
+    background-color .2s;
+}
+
+.hero-content .btn:hover {
+  background-color: var(--color-primary-light);
+  color: #fff;
+}
+
+/* - - - - - - - - - - Counter - - - - - - - - - - */
+
+.counter-title {
+  text-align: center;
+  border: 0;
+  color: var(--color-primary);
+}
+
+.btn-wrap {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.counter {
+  height: 6rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-column {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: bold;
+  position: relative;
+}
+
+
+/* - - - - - - - - - - Loaders - - - - - - - - - - */
+

@@ -1,0 +1,114 @@
+.box-1 {
+  transition-property: color, background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: .5s;
+}
+
+.box-1:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.box-2 {
+  transition:
+    color 1s 2s,
+    background-color 1s .5s;
+}
+
+.box-2:hover {
+  background-color: var(--color-accent-1);
+  color: #fff;
+}
+
+.box-3 {
+  width: 10rem; /* max-content */
+  transition: width .5s;
+}
+
+.box-3:hover {
+  width: 100%;
+}
+
+.box-4 {
+  position: relative;
+  transition: left .5s;
+  left: 0;
+}
+
+.box-4:hover {
+  left: 5rem;
+}
+
+.flex-transition {
+  display: flex;
+  justify-content: flex-start;
+  transition: justify-content .2s;
+}
+
+.flex-transition:hover {
+  justify-content: flex-end;
+}
+
+.grid-transition {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  /* transition:
+    grid-template-columns .2s,
+    gap .2s; */
+  /* grid-template-column transition only works in Firefox */
+}
+
+.grid-transition :first-child {
+  width: 15rem;
+  transition: width .5s;
+}
+
+.grid-transition:hover :first-child {
+  width: 30rem;
+}
+
+/* .grid-transition:hover {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+} */
+
+/* - - - - - - - - - - Timing Functions - - - - - - - - - - */
+
+.timing .box-simple {
+  width: 10rem;
+  position: relative;
+  left: 0;
+  transition:
+    left 1s,
+    transform 1s;
+}
+
+.timing:hover .box-simple {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.timing .linear {
+  transition-timing-function: linear;
+}
+
+.timing .ease {
+  transition-timing-function: ease;
+}
+
+.timing .ease-in {
+  transition-timing-function: ease-in;
+}
+
+.timing .ease-out {
+  transition-timing-function: ease-out;
+}
+
+.timing .ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.timing .cubic-bezier {
+  transition-timing-function: cubic-bezier(.9,-0.35,.1,1.37);
+}
