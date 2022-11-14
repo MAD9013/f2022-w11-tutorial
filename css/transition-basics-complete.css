@@ -52,26 +52,17 @@
 .grid-transition {
   display: grid;
   gap: 1rem;
-  grid-template-columns: auto 1fr 1fr 1fr;
-  /* transition:
-    grid-template-columns .2s,
-    gap .2s; */
-  /* grid-template-column transition only works in Firefox */
-}
-
-.grid-transition :first-child {
-  width: 15rem;
-  transition: width .5s;
-}
-
-.grid-transition:hover :first-child {
-  width: 30rem;
-}
-
-/* .grid-transition:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  transition:
+    grid-template-columns .2s,
+    gap .2s;
+}
+
+.grid-transition:hover {
+  grid-template-columns: 5fr 1fr 1fr 1fr;
   gap: 5rem;
-} */
+}
+
 
 /* - - - - - - - - - - Timing Functions - - - - - - - - - - */
 

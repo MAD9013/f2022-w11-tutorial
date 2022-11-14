@@ -108,7 +108,7 @@
   flex-wrap: wrap;
 }
 
-.buttons a {
+.buttons [class*="btn"] {
   color: #fff;
   text-decoration: none;
   padding: .5em 1.5em;
@@ -128,33 +128,27 @@
   position: relative;
   overflow: hidden;
   border-radius: 3rem;
+  background-color: var(--color-primary);
 }
 
-.btn-swipe::before,
-.btn-swipe::after {
+.btn-swipe span {
+  position: relative;
+}
+
+.btn-swipe::before {
   content: ' ';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 3rem;
-}
-
-.btn-swipe::before {
-  background-color: var(--color-primary);
-  border-radius: .5rem;
-}
-
-.btn-swipe::after {
   background-color: var(--color-accent-1);
   width: 0;
+  height: 100%;
+  border-radius: 3rem;
   transition: width .2s;
 }
 
-.btn-swipe:hover::after,
-.btn-swipe:focus::after {
+.btn-swipe:hover::before,
+.btn-swipe:focus::before {
   width: 100%;
 }
 
@@ -162,7 +156,6 @@
   background-color: var(--color-error);
   color: #fff;
   border-radius: .5rem;
-  /* width: 15rem; */
   text-align: center;
 }
 

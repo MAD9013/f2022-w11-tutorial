@@ -53,83 +53,6 @@
   }
 }
 
-/* - - - - - - - - - - Counter - - - - - - - - - - */
-
-.counter-title {
-  text-align: center;
-  border: 0;
-  color: var(--color-primary);
-}
-
-.btn-wrap {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.counter {
-  height: 6rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.counter-column {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  font-size: 6rem;
-  line-height: 1;
-  font-weight: bold;
-  position: relative;
-}
-
-.hundreds,
-.tens,
-.ones {
-  animation-name: countUp;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.75,-0.27,.29,1.28);
-}
-
-.hundreds {
-  --offset: 2;
-}
-
-.tens {
-  --offset: 4;
-}
-
-.ones {
-  --offset: 7;
-}
-
-
-.accident .hundreds,
-.accident .tens,
-.accident .ones {
-  top: calc(6rem * var(offset));
-  animation-name: countDown;
-}
-
-@keyframes countUp {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: calc(6rem * var(--offset));
-  }
-}
-
-@keyframes countDown {
-  0% {
-    top: calc(6rem * var(--offset));
-  }
-  100% {
-    top: 0;
-  }
-}
-
 /* - - - - - - - - - - Loaders - - - - - - - - - - */
 
 .loader-circle-wrap {
@@ -195,5 +118,82 @@
   100% {
     stroke-dashoffset: -201.09px;
     transform: rotate(630deg);
+  }
+}
+
+/* - - - - - - - - - - Counter - - - - - - - - - - */
+
+.counter-title {
+  text-align: center;
+  border: 0;
+  color: var(--color-primary);
+}
+
+.btn-wrap {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.counter {
+  height: 6rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-column {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: bold;
+  position: relative;
+}
+
+.hundreds,
+.tens,
+.ones {
+  animation-name: countUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.75,-0.27,.29,1.28);
+}
+
+.hundreds {
+  --offset: 2;
+}
+
+.tens {
+  --offset: 4;
+}
+
+.ones {
+  --offset: 7;
+}
+
+
+.accident .hundreds,
+.accident .tens,
+.accident .ones {
+  top: calc(6rem * var(--offset));
+  animation-name: countDown;
+}
+
+@keyframes countUp {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: calc(6rem * var(--offset));
+  }
+}
+
+@keyframes countDown {
+  0% {
+    top: calc(6rem * var(--offset));
+  }
+  100% {
+    top: 0;
   }
 }

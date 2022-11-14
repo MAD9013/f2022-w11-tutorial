@@ -34,33 +34,33 @@
   width: max-content;
   animation: multiStep 2s infinite;
   background-color: var(--color-accent-2-light);
-  border-width: 3px;
+  border-width: .25rem;
 }
 
 @keyframes multiStep {
   0% {
     transform: translate(0, 0);
     background-color: var(--color-accent-2-light);
-    border-width: 3px;
+    border-width: .25rem;
   }
   25% {
     transform: translate(0, 10rem) rotate(0);
     background-color: var(--color-accent-3-light);
-    border-width: 10px;
+    border-width: .75rem;
   }
   50% {
     transform: translate(10rem, 10rem) rotate(180deg);
     background-color: var(--color-accent-4-light);
-    border-width: 3px;
+    border-width: .25rem;
   }
   75% {
     transform: translate(10rem, 0) rotate(-180deg);
     background-color: var(--color-accent-5-light);
-    border-width: 10px;
+    border-width: .75rem;
   }
   100% {
     transform: translate(0, 0) rotate(0);
     background-color: var(--color-accent-2-light);
-    border-width: 3px;
+    border-width: .25rem;
   }
 }

@@ -32,6 +32,8 @@
   color: #fff;
 }
 
+/* - - - - - - - - - - Loaders - - - - - - - - - - */
+
 /* - - - - - - - - - - Counter - - - - - - - - - - */
 
 .counter-title {
@@ -61,7 +63,4 @@
   font-weight: bold;
   position: relative;
 }
-
-
-/* - - - - - - - - - - Loaders - - - - - - - - - - */
 
