@@ -537,6 +537,7 @@ code {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  position: absolute;
 }
 
 .skip-links a {
